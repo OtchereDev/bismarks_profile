@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</head>
+<body style="background: #edf2f7;"  class="pt-24">
+    <nav class=" md:hidden side_nav fixed z-50 top-0  -left-full text-white flex-col flex items-center justify-center  h-screen  bg-gray-900 transition-all duration-1000 w-screen ">
+        <!-- aside nav for mobile view -->
+        <div class="absolute top-11 left-11 text-3xl font-bold">
+            <ion-icon name="close" class="cursor-pointer close"></ion-icon>
+        </div>
+        <ul class="font-Montserrat font-semibold text-4xl">
+            <li><a href="#" class="hover:text-gray-400 mt-5 inline-block">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400 mt-5 inline-block">About</a></li>
+            <li><a href="#" class="hover:text-gray-400 mt-5 inline-block">Portfolio</a></li>
+            <li><a href="#" class="hover:text-gray-400 mt-5 inline-block">Blog</a></li>
+            <li><a href="#" class="hover:text-gray-400 mt-5 inline-block">Contact</a></li>
+         </ul>
+    </nav>
+    <nav class="p-4 bg-transparent fixed md:flex md:px-10 md:w-full top-0 left-0 md:items-center md:py-6">
+        <div class="text-3xl font-bold md:hidden">
+            <!-- toggle btn for mobile view -->
+            <ion-icon name="menu" class="cursor-pointer open"></ion-icon>
+        </div>
+        <hr class="hidden md:block md:w-2/12 md:mr-2 md:border-yellow-400 md:border-2">
+        <ul class="hidden  md:w-8/12 md:flex md:justify-between md:items-center font-Montserrat font-semibold text-lg">
+           <li><a href="#" class="hover:text-gray-400">Home</a></li>
+           <li><a href="#" class="hover:text-gray-400">About</a></li>
+           <li><a href="#" class="hover:text-gray-400">Portfolio</a></li>
+           <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+           <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+        <hr class="hidden md:block md:w-2/12 md:ml-2 md:border-yellow-400 md:border-2">
+    </nav>
+
+    <h2 class="font-Poppins font-bold text-4xl md:text-5xl mb-2 text-center">
+        Resume
+    </h2>
+    <div class="px-4 flex flex-col  py-10 lg:flex-row lg:justify-between">
+        <!-- flex div -->
+        <div class="lg:w-3/12">
+            <!-- aside for profile  -->
+            <div class="bg-white shadow-xl rounded-lg py-3">
+                <div class="photo-wrapper p-2">
+                    <img class="w-32 h-32 rounded-full mx-auto" src="assets/profile-2.jpg" alt="John Doe">
+                </div>
+                <div class="p-2">
+                    <h3 class="text-center text-xl text-gray-900 font-medium leading-8">Joh Doe</h3>
+                    <div class="text-center text-gray-400 text-xs font-semibold">
+                        <p>Biological Scientist</p>
+                    </div>
+                    <table class="text-xs my-3 md:mx-auto lg:mx-0">
+                        <tbody><tr>
+                            <td class="px-2 py-2 text-gray-500 font-semibold">Address</td>
+                            <td class="px-2 py-2">Ghana, Somewhere</td>
+                        </tr>
+                        <tr>
+                            <td class="px-2 py-2 text-gray-500 font-semibold">Phone</td>
+                            <td class="px-2 py-2">+234 45687565</td>
+                        </tr>
+                        <tr>
+                            <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                            <td class="px-2 py-2">john@exmaple.com</td>
+                        </tr>
+                    </tbody></table>
+        
+                    
+        
+                </div>
+            </div>
+            <div class="bg-white shadow-xl rounded-lg py-3 px-2 mt-5">
+                <h3 class="font-Poppins text-2xl mt-5 mb-2 ml-5">
+                    Skills:
+                </h3>
+                <hr class="w-10/12 mx-auto mb-3">
+                
+                <div class="px-4 mb-4">
+                    <span class="py-2 px-3 rounded-lg hover:bg-blue-700 cursor-pointer font-Montserrat text-white font-semibold bg-blue-400 m-1 inline-block">
+                        Physic
+                    </span>
+                    <span class="py-2 px-3 rounded-lg font-Montserrat hover:bg-blue-700 cursor-pointer text-white font-semibold bg-blue-400 m-1 inline-block">
+                        Physic
+                    </span>
+                    <span class="py-2 px-3 rounded-lg font-Montserrat hover:bg-blue-700 cursor-pointer text-white font-semibold bg-blue-400 m-1 inline-block">
+                        Physic
+                    </span>
+                    <span class="py-2 px-3 rounded-lg font-Montserrat hover:bg-blue-700 cursor-pointer text-white font-semibold bg-blue-400 m-1 inline-block">
+                        Physic
+                    </span>
+                    <span class="py-2 px-3 rounded-lg font-Montserrat hover:bg-blue-700 cursor-pointer text-white font-semibold bg-blue-400 m-1 inline-block">
+                        Physic
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="lg:w-8/12">
+            <!-- resume container -->
+            <div class="bg-white shadow-xl rounded-lg py-3 px-2 mt-5 lg:mt-0">
+                <h3 class="font-Poppins text-2xl mt-5 mb-2 ml-5">
+                    Background
+                </h3>
+                <hr class="w-10/12 mx-auto mb-3">
+                <div>
+                    <div>
+                        <!-- add icon -->
+                        <h3 class="font-Poppins text-xl mt-5 mb-2 ml-5">
+                            Experience
+                        </h3>
+                        
+                    </div>
+                    <div class="relative w-full md:w-10/12 my-8 mx-auto font-Montserrat">
+                        <div class="border-r-2 border-gray-200 border-dotted absolute h-full top-0 z-0" style="left: 7px"></div>
+                        <ul class="list-none m-0 p-0">
+                            <li class="mb-2">
+                                <div class="flex items-center mb-1">
+                                    <div class="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 z-10">
+                                    </div>
+                                    <div class="flex-1 ml-4 font-medium">Oct 2020 - Learn Electron JS</div>
+                                </div>
+                                <div class="ml-12">
+                                    <h2 class="font-Poppins text-xl">
+                                        Company Name
+                                    </h2>
+                                    <h3 class="font-Poppins text-lg">
+                                        Title 
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="flex items-center mb-1">
+                                    <div class="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 z-10">
+                                    </div>
+                                    <div class="flex-1 ml-4 font-medium">May 2019 - Learn Golang</div>
+                                </div>
+                                <div class="ml-12">
+                                    <h2 class="font-Poppins text-xl">
+                                        Company Name
+                                    </h2>
+                                    <h3 class="font-Poppins text-lg">
+                                        Title 
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="flex items-center mb-1">
+                                    <div class="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 z-10">
+                                    </div>
+                                    <div class="flex-1 ml-4 font-medium">May 2019 - Learn Golang</div>
+                                </div>
+                                <div class="ml-12">
+                                    <h2 class="font-Poppins text-xl">
+                                        Company Name
+                                    </h2>
+                                    <h3 class="font-Poppins text-lg">
+                                        Title 
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        <li>
+                                            <span class="mr-1 font-black text-2xl text-gray-400">&#8226;</span><span>One thing done</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <!-- add icon -->
+                        <h3 class="font-Poppins text-xl mt-5 mb-2 ml-5">
+                            Education
+                        </h3>
+                        
+                    </div>
+                    <div class="relative w-full md:w-10/12 my-8 mx-auto font-Montserrat">
+                        <div class="border-r-2 border-gray-200 border-dotted absolute h-full top-0 z-0" style="left: 7px"></div>
+                        <ul class="list-none m-0 p-0">
+                            <li class="mb-2">
+                                <div class="flex items-center mb-1">
+                                    <div class="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 z-10">
+                                    </div>
+                                    <div class="flex-1 ml-4 font-medium">Oct 2020 - Learn Electron JS</div>
+                                </div>
+                                <div class="ml-12">
+                                    <h2 class="font-Poppins text-xl">
+                                        School Name
+                                    </h2>
+                                    
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="flex items-center mb-1">
+                                    <div class="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 z-10">
+                                    </div>
+                                    <div class="flex-1 ml-4 font-medium">May 2019 - Learn Golang</div>
+                                </div>
+                                <div class="ml-12">
+                                    <h2 class="font-Poppins text-xl">
+                                        School Name
+                                    </h2>
+                                    
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="flex items-center mb-1">
+                                    <div class="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 z-10">
+                                    </div>
+                                    <div class="flex-1 ml-4 font-medium">May 2019 - Learn Golang</div>
+                                </div>
+                                <div class="ml-12">
+                                    <h2 class="font-Poppins text-xl">
+                                        School Name
+                                    </h2>
+                                    
+                                        
+                                  
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const open_btn=document.querySelector('.open')
+        const close_btn=document.querySelector('.close')
+        const side_nav=document.querySelector('.side_nav')
+
+        open_btn.addEventListener('click',e=>{
+            side_nav.classList.remove('-left-full')
+            side_nav.classList.add('left-0')
+        })
+
+        close_btn.addEventListener('click',e=>{
+            side_nav.classList.remove('left-0')
+            side_nav.classList.add('-left-full')
+        })
+
+
+    </script>
+</body>
+</html>
