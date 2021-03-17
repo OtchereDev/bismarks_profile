@@ -88,5 +88,22 @@
             </div>
         </form>
     </div>
+    <script>
+        const open_btn=document.querySelector('.open')
+        const close_btn=document.querySelector('.close')
+        const side_nav=document.querySelector('.side_nav')
+
+        open_btn.addEventListener('click',e=>{
+            side_nav.classList.remove('-left-full')
+            side_nav.classList.add('left-0')
+        })
+
+        close_btn.addEventListener('click',e=>{
+            side_nav.classList.remove('left-0')
+            side_nav.classList.add('-left-full')
+        })
+
+
+    </script>
 </body>
 </html>
