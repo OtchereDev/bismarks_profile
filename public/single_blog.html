@@ -4,54 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- {% comment %} <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet"> {% endcomment %} -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
-<body class=" flex items-center justify-center" style="background: #edf2f7;">
+<body class=" flex items-center justify-center relative" style="background: #edf2f7;">
+  <nav style="left: -120%;" class=" side_nav fixed z-50 top-0 -left-full text-white flex-col flex items-center justify-center  h-screen  bg-gray-900 transition-all duration-1000 w-screen ">
+    <!-- aside nav for mobile view -->
+    <div class="absolute top-11 left-11 text-3xl font-bold">
+        <ion-icon name="close" class="cursor-pointer close"></ion-icon>
+    </div>
+    <ul class="font-Montserrat font-semibold text-4xl">
+        <li><a href="index.html" class="hover:text-gray-400 mt-5 inline-block">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-400 mt-5 inline-block">About</a></li>
+        <li><a href="resume.html" class="hover:text-gray-400 mt-5 inline-block">Portfolio</a></li>
+        <li><a href="all_blogs.html" class="hover:text-gray-400 mt-5 inline-block">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-gray-400 mt-5 inline-block">Contact</a></li>
+     </ul>
+</nav>
+<nav class="p-4 bg-transparent fixed md:flex md:px-10 md:w-full text-gray-500 top-0 left-0 md:items-center md:py-6 z-50">
+    <div class="text-3xl font-bold ">
+        <!-- toggle btn for mobile view -->
+        <ion-icon name="menu" class="cursor-pointer open"></ion-icon>
+    </div>
+    
+</nav>
     <div class="max-w-screen-xl mx-auto">
-    <!-- header -->
-    <header class="flex items-center justify-between py-2 border-b">
-      <a href="#" class="px-2 lg:px-0">
-        <img src="../../images/health-logo.svg" alt="logo" class="h-10 w-10" />
-      </a>
-      <ul class="inline-flex items-center">
-        <li class="px-2 md:px-4">
-          <a href="" class="text-purple-600 font-semibold hover:text-purple-500"> Home </a>
-        </li>
-        <li class="px-2 md:px-4">
-          <a href="" class="text-gray-500 font-semibold hover:text-purple-500"> About </a>
-        </li>
-        <li class="px-2 md:px-4">
-          <a href="" class="text-gray-500 font-semibold hover:text-purple-500"> Press </a>
-        </li>
-        <li class="px-2 md:px-4">
-          <a href="" class="text-gray-500 font-semibold hover:text-purple-500"> Contact </a>
-        </li>
-        <li class="px-2 md:px-4 hidden md:block">
-          <a href="" class="text-gray-500 font-semibold hover:text-purple-500"> Login </a>
-        </li>
-        <li class="px-2 md:px-4 hidden md:block">
-          <a href="" class="text-gray-500 font-semibold hover:text-purple-500"> Register </a>
-        </li>
-      </ul>
-
-    </header>
+    
     <!-- header ends here -->
 
-    <main class="mt-10">
+    <main class="mt-10 mb-32">
 
       <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative" style="height: 24em;">
         <div class="absolute left-0 bottom-0 w-full h-full z-10"
           style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"></div>
-        <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
+        <img src="assets/pexels-meryl-katys-6978582.jpg" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
         <div class="p-4 absolute bottom-0 left-0 z-20">
-          <a href="#"
-            class="px-4 py-1 bg-black text-gray-200 inline-flex items-center justify-center mb-2">Nutrition</a>
+          <a href=""
+            class="px-4 py-1 bg-black text-gray-200 inline-flex items-center justify-center mb-2">Physics</a>
           <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
             Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
           </h2>
           <div class="flex mt-3">
-            <img src="https://randomuser.me/api/portraits/men/97.jpg"
+            <img src="assets/profile-2.jpg"
               class="h-10 w-10 rounded-full mr-2 object-cover" />
             <div>
               <p class="font-semibold text-gray-200 text-sm"> Mike Sullivan </p>
@@ -126,31 +120,31 @@
     </main>
     <!-- main ends here -->
 
-    <!-- footer -->
-    <footer class="border-t mt-32 pt-12 pb-32 px-4 lg:px-0">
-      <div class="flex">
-
-        <div class="w-full md:w-1/3 lg:w-1/4">
-          <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
-          <ul>
-            <li> <a href="" class="block text-gray-600 py-2">Team</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">About us</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Press</a> </li>
-          </ul>
-        </div>
-
-        <div class="w-full md:w-1/3 lg:w-1/4">
-          <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
-          <ul>
-            <li> <a href="" class="block text-gray-600 py-2">Blog</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Privacy Policy</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Terms & Conditions</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Documentation</a> </li>
-          </ul>
-        </div>
-
-      </div>
-    </footer>
   </div>
+  <footer class="mt-10 bg-black w-full text-gray-50 absolute bottom-0 left-0 text-center py-5 text-sm md:flex md:justify-between md:px-5 md:py-8">
+    <p >
+        &copy;All Rights Reserved. Bismark Lorem 
+    </p>
+    <a href="#" class="">
+        Back to top
+    </a>
+</footer>
+<script>
+  const open_btn=document.querySelector('.open')
+  const close_btn=document.querySelector('.close')
+  const side_nav=document.querySelector('.side_nav')
+
+  open_btn.addEventListener('click',e=>{
+      side_nav.classList.remove('-left-full')
+      side_nav.classList.add('left-0')
+  })
+
+  close_btn.addEventListener('click',e=>{
+      side_nav.classList.remove('left-0')
+      side_nav.classList.add('-left-full')
+  })
+
+
+</script>
 </body>
 </html>
