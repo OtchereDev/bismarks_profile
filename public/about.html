@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex items-center justify-center" style="background: #edf2f7;">
-  <nav style="left: -120%;" class=" side_nav fixed z-50 top-0 -left-full text-white flex-col flex items-center justify-center  h-screen  bg-gray-900 transition-all duration-1000 w-screen ">
+  <nav style="left: -120%;" class=" side_nav fixed z-50 top-0 -left-full text-white flex-col flex items-center justify-center  h-screen  bg-gray-900 transition-all duration-1000 w-screen">
     <!-- aside nav for mobile view -->
-    <div class="absolute top-11 left-11 text-3xl font-bold">
+    <div class="absolute top-11 left-11 text-3xl text-white font-bold">
         <ion-icon name="close" class="cursor-pointer close"></ion-icon>
     </div>
     <ul class="font-Montserrat font-semibold text-4xl">
@@ -21,7 +21,7 @@
       <li><a href="contact.html" class="hover:text-gray-400 mt-5 inline-block">Contact</a></li>
      </ul>
 </nav>
-<nav class="p-4 bg-transparent fixed md:flex md:px-10 md:w-full text-gray-500 top-0 left-0 md:items-center md:py-6 z-50">
+<nav class="p-4 bg-transparent fixed md:flex md:px-10 md:w-full text-gray-500 top-0 left-0 md:items-center md:py-6 z-20">
     <div class="text-3xl font-bold">
         <!-- toggle btn for mobile view -->
         <ion-icon name="menu" class="cursor-pointer open"></ion-icon>
@@ -43,8 +43,10 @@
           Dolorem aliquam nesciunt similique sint possimus! Eaque blanditiis beatae perspiciatis rem fugit, ab quos nulla ex aliquam sapiente, error rerum modi. Laboriosam quisquam sapiente nemo, animi a distinctio autem nulla.
           Aperiam deleniti natus voluptatibus possimus deserunt libero praesentium repudiandae blanditiis, aspernatur iure laborum iste amet delectus, harum id aut quibusdam consectetur minima hic. Illum quidem incidunt qui, commodi obcaecati error.
           Impedit quibusdam nemo optio dicta. Neque nemo voluptatibus delectus voluptas optio, dicta pariatur qui amet reprehenderit reiciendis rem at aspernatur consectetur saepe magnam sit accusamus deserunt eveniet eligendi? Rerum, porro?</p>
-          <button class="bg-black rounded-md py-3 px-7 mt-6 text-white">Email Me</button>
-          
+          <a href="contact.html">
+            <button class="bg-black rounded-md py-3 px-7 mt-6 text-white">Email Me</button>
+
+          </a>
         </div>
       </div>
     </div>
@@ -54,19 +56,21 @@
     const open_btn=document.querySelector('.open')
     const close_btn=document.querySelector('.close')
     const side_nav=document.querySelector('.side_nav')
-
+  
     open_btn.addEventListener('click',e=>{
         side_nav.classList.remove('-left-full')
         side_nav.classList.add('left-0')
+        side_nav.style.left='0%'
     })
-
+  
     close_btn.addEventListener('click',e=>{
         side_nav.classList.remove('left-0')
         side_nav.classList.add('-left-full')
+        side_nav.style.left='-120%'
     })
-
-
-</script>
+  
+  
+  </script>
   
 </body>
 </html>
