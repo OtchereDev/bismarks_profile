@@ -4,25 +4,69 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://unpkg.com/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex items-center justify-center" style="background: #edf2f7;">
+  <nav style="left: -120%;" class=" side_nav fixed z-50 top-0 -left-full text-white flex-col flex items-center justify-center  h-screen  bg-gray-900 transition-all duration-1000 w-screen ">
+    <!-- aside nav for mobile view -->
+    <div class="absolute top-11 left-11 text-3xl font-bold">
+        <ion-icon name="close" class="cursor-pointer close"></ion-icon>
+    </div>
+    <ul class="font-Montserrat font-semibold text-4xl">
+      <li><a href="index.html" class="hover:text-gray-400 mt-5 inline-block">Home</a></li>
+      <li><a href="about.html" class="hover:text-gray-400 mt-5 inline-block">About</a></li>
+      <li><a href="resume.html" class="hover:text-gray-400 mt-5 inline-block">Portfolio</a></li>
+      <li><a href="all_blogs.html" class="hover:text-gray-400 mt-5 inline-block">Blog</a></li>
+      <li><a href="contact.html" class="hover:text-gray-400 mt-5 inline-block">Contact</a></li>
+     </ul>
+</nav>
+<nav class="p-4 bg-transparent fixed md:flex md:px-10 md:w-full text-gray-500 top-0 left-0 md:items-center md:py-6 z-50">
+    <div class="text-3xl font-bold">
+        <!-- toggle btn for mobile view -->
+        <ion-icon name="menu" class="cursor-pointer open"></ion-icon>
+    </div>
+    
+</nav>
     <div class="container mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-2 h-screen min-h-screen">
       <div class="max-h-96 md:h-screen">
-        <img class="w-screen h-screen object-cover object-top" src="https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <img class="w-screen h-screen object-cover object-top" src="assets/pexels-karolina-grabowska-6256066.jpg" alt="">
       </div>
-      <div class="flex bg-gray-100 p-10">
+      <div class="flex bg-gray-100 p-10 md:overflow-y-scroll">
         <div class="mb-auto mt-auto max-w-lg">
-          <h1 class="text-3xl uppercase">Jun Santilla</h1>
-          <p class="font-semibold mb-5">Web Developer</p>
+          <h1 class="text-3xl uppercase">Bismark Lorem</h1>
+          <p class="font-semibold mb-5">Physicist and Researcher</p>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+          <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, sed eligendi. At, molestias dolorem. Rem ipsa consequuntur similique sint nihil, neque ad esse voluptatibus quis ab nesciunt! Obcaecati, hic voluptate.
+          Dignissimos excepturi numquam architecto dicta accusantium vitae voluptas culpa nemo, in laudantium quaerat repellendus repudiandae distinctio eaque, cupiditate nam laborum aspernatur quibusdam, reiciendis sint incidunt rem. Perspiciatis, fuga. Suscipit, illo.
+          Dolorem aliquam nesciunt similique sint possimus! Eaque blanditiis beatae perspiciatis rem fugit, ab quos nulla ex aliquam sapiente, error rerum modi. Laboriosam quisquam sapiente nemo, animi a distinctio autem nulla.
+          Aperiam deleniti natus voluptatibus possimus deserunt libero praesentium repudiandae blanditiis, aspernatur iure laborum iste amet delectus, harum id aut quibusdam consectetur minima hic. Illum quidem incidunt qui, commodi obcaecati error.
+          Impedit quibusdam nemo optio dicta. Neque nemo voluptatibus delectus voluptas optio, dicta pariatur qui amet reprehenderit reiciendis rem at aspernatur consectetur saepe magnam sit accusamus deserunt eveniet eligendi? Rerum, porro?</p>
           <button class="bg-black rounded-md py-3 px-7 mt-6 text-white">Email Me</button>
+          
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    const open_btn=document.querySelector('.open')
+    const close_btn=document.querySelector('.close')
+    const side_nav=document.querySelector('.side_nav')
+
+    open_btn.addEventListener('click',e=>{
+        side_nav.classList.remove('-left-full')
+        side_nav.classList.add('left-0')
+    })
+
+    close_btn.addEventListener('click',e=>{
+        side_nav.classList.remove('left-0')
+        side_nav.classList.add('-left-full')
+    })
+
+
+</script>
   
 </body>
 </html>
